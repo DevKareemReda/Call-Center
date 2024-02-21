@@ -16,6 +16,7 @@ body {
   color: $--text-color;
   font-weight: 300;
   font-size: 14px;
+  height: 3000px;
 }
 
 h1,
@@ -64,13 +65,18 @@ a {
 .main-title {
   color: #fff;
   margin-bottom: 80px;
+  h2 {
+    @media screen and (max-width: 700px) {
+      font-size: 30px;
+    }
+  }
 }
 
 .special-padding {
   margin: 20px 0 40px;
 }
 
-.col {
+.counter >.col {
   @media screen and (max-width: 991px) {
     flex: 0;
   }

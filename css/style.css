@@ -18,6 +18,7 @@ body {
   color: #777;
   font-weight: 300;
   font-size: 14px;
+  height: 3000px;
 }
 
 h1,
@@ -67,13 +68,18 @@ a {
   color: #fff;
   margin-bottom: 80px;
 }
+@media screen and (max-width: 700px) {
+  .main-title h2 {
+    font-size: 30px;
+  }
+}
 
 .special-padding {
   margin: 20px 0 40px;
 }
 
 @media screen and (max-width: 991px) {
-  .col {
+  .counter > .col {
     flex: 0;
   }
 }
@@ -182,16 +188,16 @@ button.btn-primary {
   position: fixed;
   z-index: 12;
   left: 0;
-  width: 340px;
+  width: 370px;
   height: 100%;
   padding: 40px 15px;
   background: #ddd;
   clip-path: circle(0% at 2% 2%);
   top: 0;
-  -webkit-transition: 150ms linear;
-  -moz-transition: 150ms linear;
-  -o-transition: 150ms linear;
-  transition: 150ms linear;
+  -webkit-transition: 250ms linear;
+  -moz-transition: 250ms linear;
+  -o-transition: 250ms linear;
+  transition: 250ms linear;
   background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
 }
 .nav-site.active {
@@ -235,10 +241,10 @@ button.btn-primary {
   opacity: 0;
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: 150ms linear;
-  -moz-transition: 150ms linear;
-  -o-transition: 150ms linear;
-  transition: 150ms linear;
+  -webkit-transition: 250ms linear;
+  -moz-transition: 250ms linear;
+  -o-transition: 250ms linear;
+  transition: 250ms linear;
 }
 
 .overlay-body.active {
@@ -271,17 +277,11 @@ button.btn-primary {
 .bars span:last-child {
   margin-bottom: 0;
 }
-.bars:hover span:first-child {
-  transform: translateY(7px);
-}
 .bars.active span:first-child {
   transform: translateY(10px) rotate(45deg);
 }
-.bars:hover span:nth-child(2), .bars.active span:nth-child(2) {
+.bars.active span:nth-child(2) {
   opacity: 0;
-}
-.bars:hover span:last-child {
-  transform: translateY(-7px);
 }
 .bars.active span:last-child {
   transform: translateY(-10px) rotate(-45deg);
@@ -295,6 +295,11 @@ button.btn-primary {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .banner-view {
+    background: url(../images/header-bg.jpg.webp) 40% center;
+  }
 }
 .banner-view .banner-text h3 {
   text-transform: uppercase;
@@ -405,6 +410,62 @@ button.btn-primary {
 
 .offfer-details {
   padding-right: 60px;
+}
+
+/* _____ style counter _____ */
+.count {
+  background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+}
+.count + p {
+  color: #222;
+}
+
+/* _____ services _____ */
+.services {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/service-bg.jpg.webp") center center/cover no-repeat;
+  padding: 100px 0;
+}
+.services .services-items {
+  padding: 50px 30px;
+  -webkit-transition: 250ms linear;
+  -moz-transition: 250ms linear;
+  -o-transition: 250ms linear;
+  transition: 250ms linear;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  cursor: pointer;
+}
+.services .services-items::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+  -webkit-transition: 250ms linear;
+  -moz-transition: 250ms linear;
+  -o-transition: 250ms linear;
+  transition: 250ms linear;
+  clip-path: circle(0% at 0 0);
+  z-index: -1;
+}
+.services .services-items:hover::before {
+  clip-path: circle(160% at 0 0);
+}
+.services .services-items:hover {
+  box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.5);
+}
+.services .services-items h3 {
+  margin-bottom: 20px;
+}
+.services .services-items h3 span {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

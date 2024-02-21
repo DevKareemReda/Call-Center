@@ -3,7 +3,7 @@
   position: fixed;
   z-index: 12;
   left: 0;
-  width: 340px;
+  width: 370px;
   height: 100%;
   padding: 40px 15px;
   background: #ddd;
@@ -55,8 +55,6 @@
 
 }
 
-
-
 .overlay-body {
   position: fixed;
   inset: 0;
@@ -98,21 +96,12 @@
     }
   }
 
-  &:hover span:first-child {
-    transform: translateY(7px);
-  }
-
   &.active span:first-child {
     transform: translateY(10px) rotate(45deg);
   }
 
-  &:hover span:nth-child(2),
   &.active span:nth-child(2) {
     opacity: 0;
-  }
-
-  &:hover span:last-child {
-    transform: translateY(-7px);
   }
 
   &.active span:last-child {

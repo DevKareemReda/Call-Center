@@ -6,6 +6,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 700px) {
+    background: url(../images/header-bg.jpg.webp) 40% center;
+  }
   .banner-text {
     h3 {
       text-transform: uppercase;
