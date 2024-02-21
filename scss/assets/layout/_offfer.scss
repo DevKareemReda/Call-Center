@@ -1,0 +1,17 @@
+/* _____ style offser _____ */
+.offfer-img {
+  box-shadow: 0px 0px 40px 0px rgba(132,144,255,0.2);
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  border: 2px solid transparent;
+  @include vendor(webkit moz o, transition, 250ms linear);
+  cursor: pointer;
+  &:hover {
+    border: 2px solid #6a9ddc;
+  }
+}
+
+.offfer-details {
+  padding-right: 60px;
+}

@@ -1,0 +1,26 @@
+/* _____ style banner-view _____ */
+.banner-view {
+  background: url('../images/header-bg.jpg.webp') center center / cover;
+  height: 100vh;
+  min-height: 633px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .banner-text {
+    h3 {
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 3px;
+    }
+    h1 {
+      text-transform: capitalize;
+      margin-top: 20px;
+      @media screen and (max-width: 1199px){
+        font-size: 45px;
+      }
+    }
+    p {
+      padding: 20px 0;
+    }
+  }
+}
