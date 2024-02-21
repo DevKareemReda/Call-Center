@@ -26,9 +26,10 @@ $(() => {
 });
 
 let stickyTop = document.querySelector(".header-nav");
-window.onscroll = () => {
+function scrolled() {
   stickyTop.classList.toggle("active", window.scrollY >= 200);
-};
+}
+window.addEventListener("scroll", scrolled);
 
 let bars = document.querySelector(".bars");
 let navSite = document.querySelector(".nav-site");
@@ -56,12 +57,13 @@ let counterCount = document.querySelector(".counter");
 let countIncrease = document.querySelectorAll(".count");
 let stopCounter = false;
 
-window.onscroll = function () {
+function scrolledCounter() {
   if (this.scrollY >= counterCount.offsetTop - 300) {
     if (!stopCounter) countIncrease.forEach((el) => counter(el));
     stopCounter = true;
   }
-};
+}
+window.addEventListener("scroll", scrolledCounter);
 
 function counter(el) {
   let getData = Number(el.getAttribute("data-count"));

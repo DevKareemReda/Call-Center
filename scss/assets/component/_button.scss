@@ -9,16 +9,33 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   position: relative;
+
+  &.btn {
+    padding: 12px 30px;
+  }
+
+  &.btn-left {
+    padding: 12px 60px 12px 30px;
+    .lnr.lnr-arrow-right {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      @include vendor(webkit moz o, transition, 150ms linear);
+    }
+    &:hover .lnr.lnr-arrow-right {
+      right: 20px;
+    }
+  }
+
+  &.btn-primary {
+    @extend %overlay-green;
+  }
 }
 
-button.btn {
-  padding: 12px 30px;
-}
 
-button.btn-left {
-  padding: 12px 60px 12px 30px;
-}
 
-button.btn-primary {
-  background: -webkit-linear-gradient($--linear-color);
-}
+
+
+
+

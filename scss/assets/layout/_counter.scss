@@ -1,6 +1,6 @@
 /* _____ style counter _____ */
 .count {
-  background-image: -webkit-linear-gradient($--linear-color);
+  @extend %overlay-green;
   @include vendor(webkit moz, background-clip, text);
   -webkit-text-fill-color: transparent;
   font-size: 48px;
