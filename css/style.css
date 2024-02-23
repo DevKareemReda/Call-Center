@@ -97,6 +97,10 @@ a {
   padding: 0;
 }
 
+.black-50 {
+  color: #777;
+}
+
 button {
   text-align: center;
   display: inline-block;
@@ -481,6 +485,7 @@ button.btn-left:hover .lnr.lnr-arrow-right {
   margin-right: 10px;
 }
 
+/* _____ style about _____ */
 .about-btm {
   margin-bottom: 120px;
 }
@@ -512,6 +517,45 @@ button.btn-left:hover .lnr.lnr-arrow-right {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* _____ style brand _____ */
+.brand {
+  background-color: #F9F9FF;
+}
+.brand .brand-inner {
+  padding: 60px 65px;
+}
+.brand img {
+  filter: grayscale(100%);
+}
+.brand img:hover {
+  filter: grayscale(0%);
+}
+
+/* _____ style contact _____ */
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #ced4da;
+  color: #495057;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  outline: none;
+  -webkit-transition: 100ms linear;
+  -moz-transition: 100ms linear;
+  -o-transition: 100ms linear;
+  transition: 100ms linear;
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+textarea {
+  height: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */

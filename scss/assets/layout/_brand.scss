@@ -1,0 +1,13 @@
+/* _____ style brand _____ */
+.brand {
+	background-color: #F9F9FF;
+	.brand-inner {
+		padding: 60px 65px;
+	}
+	img {
+		filter: grayscale(100%);
+		&:hover {
+			filter: grayscale(0%)
+		}
+	}
+}

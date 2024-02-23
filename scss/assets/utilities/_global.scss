@@ -6,17 +6,17 @@
 *,
 *::before,
 *::after {
-  @include vendor(webkit moz ms o, box-sizing, border-box);
-  padding: 0;
-  margin: 0;
+	@include vendor(webkit moz ms o, box-sizing, border-box);
+	padding: 0;
+	margin: 0;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  color: $--text-color;
-  font-weight: 300;
-  font-size: 14px;
-  height: 3000px;
+	font-family: "Poppins", sans-serif;
+	color: $--text-color;
+	font-weight: 300;
+	font-size: 14px;
+	height: 3000px;
 }
 
 h1,
@@ -25,69 +25,73 @@ h3,
 h4,
 h5,
 h6 {
-  color: #222;
-  font-weight: 600;
+	color: #222;
+	font-weight: 600;
 }
 
 h1 {
-  font-size: 60px;
+	font-size: 60px;
 }
 
 h2 {
-  font-size: 36px;
+	font-size: 36px;
 }
 
 h3 {
-  font-size: 18px;
+	font-size: 18px;
 }
 
 ul {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 a {
-  text-decoration: none;
-  display: block;
+	text-decoration: none;
+	display: block;
 }
 
 .section {
-  padding: 120px 0;
+	padding: 120px 0;
 }
 
 .text-white {
-  color: #fff;
+	color: #fff;
 }
 
 .text-center {
-  text-align: center;
+	text-align: center;
 }
 
 .main-title {
-  color: #fff;
-  margin-bottom: 80px;
+	color: #fff;
+	margin-bottom: 80px;
 
-  h2 {
-    @media screen and (max-width: 700px) {
-      font-size: 30px;
-    }
-  }
+	h2 {
+		@media screen and (max-width: 700px) {
+			font-size: 30px;
+		}
+	}
 }
 
 .special-padding {
-  margin: 20px 0 40px;
+	margin: 20px 0 40px;
 }
 
-.counter>.col {
-  @media screen and (max-width: 991px) {
-    flex: 0;
-  }
+.counter > .col {
+	@media screen and (max-width: 991px) {
+		flex: 0;
+	}
 }
 
 .img-fluid {
-  max-width: 100%;
-  vertical-align: middle;
+	max-width: 100%;
+	vertical-align: middle;
 }
 
 .no-padding {
-  padding: 0;
+	padding: 0;
+}
+
+.black-50 {
+	color: $--text-color;
 }
