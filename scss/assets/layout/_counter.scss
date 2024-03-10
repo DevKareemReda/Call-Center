@@ -1,8 +1,6 @@
 /* _____ style counter _____ */
 .count {
-  @extend %overlay-green;
-  @include vendor(webkit moz, background-clip, text);
-  -webkit-text-fill-color: transparent;
+  color: $--primary-color;
   font-size: 48px;
   +p{
     color: #222;

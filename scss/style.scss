@@ -1,10 +1,10 @@
 @import 'assets/helper/variable';
 @import 'assets/helper/mixin';
-@import 'assets/utilities/global';
+@import 'assets/layout/global';
 @import 'assets/helper/placeholder';
 @import 'assets/component/button';
 @import 'assets/layout/header';
-@import 'assets/responsive/nav';
+@import 'assets/layout/nav';
 @import 'assets/layout/banner';
 @import 'assets/layout/feature';
 @import 'assets/layout/testmonials';
@@ -14,3 +14,4 @@
 @import 'assets/layout/about';
 @import 'assets/layout/brand';
 @import 'assets/layout/contact';
+@import 'assets/layout/footer';

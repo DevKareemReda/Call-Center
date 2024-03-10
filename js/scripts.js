@@ -23,6 +23,7 @@ $(() => {
       },
     },
   });
+  new WOW().init();
 });
 
 let stickyTop = document.querySelector(".header-nav");
@@ -117,7 +118,7 @@ let countIncrease = document.querySelectorAll(".count");
 let stopCounter = false;
 
 function scrolledCounter() {
-  if (this.scrollY >= counterCount.offsetTop - 300) {
+  if (this.scrollY >= counterCount.offsetTop - 350) {
     if (!stopCounter) countIncrease.forEach((el) => counter(el));
     stopCounter = true;
   }
@@ -143,3 +144,6 @@ goUp.onclick = function () {
     behavior: 'smooth'
   })
 }
+
+let copyRight = document.querySelector(".copy-right span");
+copyRight.innerHTML = new Date().getFullYear()
